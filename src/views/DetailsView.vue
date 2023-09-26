@@ -8,6 +8,7 @@
     </div>
     <div v-else>Loading...</div>
   </div>
+  <button class="back" @click="goBack">Go Back</button>
 </template>
 
 <script>
@@ -19,6 +20,11 @@ export default {
     load();
 
     return { post, error };
+  },
+  methods: {
+    goBack() {
+      this.$router.go(-1);
+    },
   },
 };
 </script>

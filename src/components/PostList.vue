@@ -1,6 +1,6 @@
 <template>
   <div class="post-list">
-    <div v-for="post in posts" :key="post.id">
+    <div v-for="post in posts.slice().reverse()" :key="post.id">
       <SinglePost :post="post" />
     </div>
   </div>
@@ -8,11 +8,9 @@
 
 <script>
 import SinglePost from "@/components/SinglePost.vue";
-import { onMounted, onUnmounted, onUpdated } from "vue";
 export default {
   props: ["posts"],
   components: { SinglePost },
-  setup(props) {},
 };
 </script>
 

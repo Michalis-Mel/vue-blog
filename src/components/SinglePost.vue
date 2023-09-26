@@ -5,10 +5,13 @@
     </router-link>
     <p>{{ snippet }}</p>
     <span v-for="tag in post.tags" :key="tag"> #{{ tag }}</span>
+
+    <button @click="deletePost">Delete Post</button>
   </div>
 </template>
 
 <script>
+import axios from "axios";
 import { computed } from "vue";
 
 export default {
@@ -17,7 +20,18 @@ export default {
     const snippet = computed(() => {
       return props.post.body.substring(0, 100) + "...";
     });
+
     return { snippet };
+  },
+  methods: {
+    deletePost() {
+      axios
+        .delete(`http://localhost:3000/posts/${this.post.id}`)
+        .then((res) => {
+          console.log(res);
+        });
+      this.$router.go(this.$router.currentRoute);
+    },
   },
 };
 </script>
