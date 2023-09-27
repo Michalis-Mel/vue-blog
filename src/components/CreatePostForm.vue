@@ -8,7 +8,7 @@
       <h4>There was an error creating your post...</h4>
     </div>
   </div>
-  <div v-else>
+  <div v-else style="width: 100%">
     <form @submit.prevent="handleSubmit">
       <label>Title: </label>
       <input v-model="post.title" type="text" required />
@@ -16,7 +16,7 @@
       <input v-model="post.body" type="text" required />
       <label>Tags: </label>
       <input v-model="post.tags" type="text" />
-      <button>Create Post</button>
+      <button class="create">Create Post</button>
     </form>
   </div>
 </template>
@@ -46,4 +46,3 @@ export default {
   },
 };
 </script>
-<style></style>

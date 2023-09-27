@@ -1,7 +1,9 @@
 <template>
-  <div class="addArticle">
-    <CreatePostForm />
-    <button class="back" @click="goBack">Go Back</button>
+  <div class="addPost">
+    <div class="row">
+      <CreatePostForm />
+      <button class="back" @click="goBack">Go Back</button>
+    </div>
   </div>
 </template>
 
@@ -16,5 +18,3 @@ export default {
   },
 };
 </script>
-
-<style></style>

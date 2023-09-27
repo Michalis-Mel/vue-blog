@@ -27,7 +27,13 @@
       "id": 3,
       "title": "JavaScript Frameworks Comparison: 2023 Edition",
       "body": "An in-depth analysis of popular JavaScript frameworks like React, Angular, and Vue.js, helping you choose the right one for your project.",
-      "tags": ["JavaScript", "Frameworks", "React", "Angular", "Vue.js"]
+      "tags": [
+        "JavaScript",
+        "Frameworks",
+        "React",
+        "Angular",
+        "Vue.js"
+      ]
     },
     {
       "id": 4,
@@ -56,7 +62,12 @@
       "id": 6,
       "title": "Serverless Architecture for Web Developers",
       "body": "Learn how to build scalable and cost-effective web applications using serverless computing, leveraging services like AWS Lambda and Azure Functions.",
-      "tags": ["Serverless", "AWS Lambda", "Azure Functions", "Cloud Computing"]
+      "tags": [
+        "Serverless",
+        "AWS Lambda",
+        "Azure Functions",
+        "Cloud Computing"
+      ]
     },
     {
       "id": 7,
@@ -73,19 +84,23 @@
       "id": 8,
       "title": "GraphQL and REST API Comparison",
       "body": "Analyze the pros and cons of GraphQL and RESTful APIs to determine which is the right choice for your web development projects in 2023.",
-      "tags": ["GraphQL", "REST API", "API Development", "Data Fetching"]
+      "tags": [
+        "GraphQL",
+        "REST API",
+        "API Development",
+        "Data Fetching"
+      ]
     },
     {
       "id": 9,
       "title": "Web Accessibility in 2023: A Comprehensive Guide",
       "body": "Ensure that your web applications are accessible to all users by following the latest web accessibility guidelines and best practices.",
-      "tags": ["Web Accessibility", "A11y", "WCAG", "Inclusive Design"]
-    },
-    {
-      "id": 10,
-      "title": "Web DevOps in 2023: Streamlining Development and Deployment",
-      "body": "Optimize your web development workflow with DevOps practices, CI/CD pipelines, and automation tools for efficient and reliable deployments.",
-      "tags": ["DevOps", "CI/CD", "Automation", "Deployment"]
+      "tags": [
+        "Web Accessibility",
+        "A11y",
+        "WCAG",
+        "Inclusive Design"
+      ]
     }
   ]
 }

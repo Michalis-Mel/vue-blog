@@ -1,0 +1,13 @@
+.notFound {
+  .row {
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto;
+
+    h2 {
+      color: #fff;
+      font-size: 40px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.details .row {
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+
+  .error {
+    color: #fff;
+    font-size: 40px;
+  }
+
+  .postDetails {
+    width: 100%;
+    h3 {
+      font-size: 26px;
+      margin: 0 auto 15px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .loading {
+      font-size: 26px;
+      margin: 0 auto 15px;
+    }
+  }
+}

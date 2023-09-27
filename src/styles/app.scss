@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Colors
+:root {
+  --dark: #141a26;
+  --blue1: #0e5078;
+  --blue2: #4a96d9;
+  --light: #c2cfdf;
+  --pink: #b2336f;
+}
+
+//Responsive sizes
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1280px;
+
+body {
+  background: linear-gradient(180deg, var(--dark) 50%, #031c2c 100%);
+  min-height: 100vh;
+}
+
+//Scrollbar
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--blue1);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--blue2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+li {
+  color: var(--light);
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+h1 {
+  font-size: 40px;
+  position: relative;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  margin: 0 auto 50px auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 60%;
+    background: var(--blue2);
+  }
+}
+
+button.back {
+  cursor: pointer;
+  border: 3px solid var(--blue1);
+  background: var(--blue1);
+  color: var(--light);
+  padding: 8px 15px;
+  box-sizing: border-box;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: transparent;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+}
+
+@import "./header.scss";
+@import "./home.scss";
+@import "./notFound.scss";
+@import "./details.scss";
+@import "./addPost.scss";

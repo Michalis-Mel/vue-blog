@@ -4,7 +4,9 @@
       <h3>{{ post.title }}</h3>
     </router-link>
     <p>{{ snippet }}</p>
-    <span v-for="tag in post.tags" :key="tag"> #{{ tag }}</span>
+    <div class="tags">
+      <span v-for="tag in post.tags" :key="tag"> #{{ tag }}</span>
+    </div>
 
     <button @click="deletePost">Delete Post</button>
   </div>
@@ -35,5 +37,3 @@ export default {
   },
 };
 </script>
-
-<style></style>

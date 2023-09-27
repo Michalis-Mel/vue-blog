@@ -1,6 +1,10 @@
 <template>
   <div class="post-list">
-    <div v-for="post in posts.slice().reverse()" :key="post.id">
+    <div
+      v-for="post in posts.slice().reverse()"
+      :key="post.id"
+      class="post_con"
+    >
       <SinglePost :post="post" />
     </div>
   </div>
@@ -13,5 +17,3 @@ export default {
   components: { SinglePost },
 };
 </script>
-
-<style></style>
