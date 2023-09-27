@@ -37,6 +37,19 @@
       box-sizing: border-box;
     }
 
+    .tags {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .tag {
+        font-size: 18px;
+        margin-right: 8px;
+        color: var(--light);
+      }
+    }
+
     button.create {
       width: 100%;
       max-width: 200px;
