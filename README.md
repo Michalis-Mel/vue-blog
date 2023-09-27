@@ -12,22 +12,22 @@ Follow these steps to set up and run Vue Blog on your local machine:
 
 2. Navigate to the project directory:
 
-`cd vue-blog`
+   `cd vue-blog`
 
 3. Install the project dependencies:
 
-`npm install`
+   `npm install`
 
 4. Navigate to the project directory:
 
-`cd vue-blog`
+   `cd vue-blog`
 
 5. Configure the posts from the db file:
 
-`npx json-server --watch data/db.json`
+   `npx json-server --watch data/db.json`
 
 6. Start the development server:
 
-`npm run serve`
+   `npm run serve`
 
 7. Open your web browser and visit http://localhost:8080.
